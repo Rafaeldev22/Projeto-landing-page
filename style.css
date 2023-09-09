@@ -7,7 +7,10 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: #f1f2f3;
 }
 
 header {
@@ -18,7 +21,8 @@ header {
 }
 
 .container {
-  max-width: 1320px;
+  /* border: 2px solid red; */
+  width: 1360px;
 }
 
 .cabeca {
@@ -30,16 +34,26 @@ header {
 .nav-bar {
   /* border: 2px solid red; */
   display: flex;
+  position: fixed;
   justify-content: space-between;
   /* padding: 0px 100px; */
-  width: 1240px;
+  width: 1420px;
   height: 90px;
   align-items: center;
+  padding: 0px 27px;
+  background-color: #f1f2f3;
+  z-index: 1;
 }
 
 .links a {
   padding: 32px 15px;
   text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #0d6efd;
 }
 
 .btn {
@@ -52,11 +66,37 @@ header {
   color: #fff;
   font-weight: 600;
   margin-left: 48px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0859d1;
+}
+
+.btn-2 {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  width: 200px;
+  margin: 30px 0px 0px;
+  padding: 16px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.25rem #ffc107b4;
+}
+
+svg {
+  /* border: 2px solid red; */
+  margin: 0px 0px 0px 16px;
 }
 
 .container-2 {
-  /* border: 1px solid red; */
-  height: 700px;
+  /* border: 2px solid red; */
+  border-bottom: 1px solid rgba(131, 131, 131, 0.365);
+  height: 100vh;
+  max-width: 2500px;
+  padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,19 +128,22 @@ header {
 
 .titulo {
   display: block;
+  width: 650px;
   font-size: 4rem;
   margin: 0px 0px 32px;
   line-height: 81px;
+  color: #151e2e;
+  /* border: 2px solid red; */
 }
 
 .palavra {
-  color: red;
+  color: #f4284a;
 }
 
 .paragrafo {
   font-size: 1.25rem;
   /* border: 1px solid blue; */
-  max-width: 95%;
+  width: 600px;
   letter-spacing: 0.1rem;
   line-height: 35px;
 }
@@ -121,8 +164,8 @@ header {
   height: 300px;
   background-color: #f4284a;
   border-radius: 7rem 1rem;
-  right: 310px;
-  bottom: 190px;
+  right: 250px;
+  bottom: 150px;
 }
 
 .linhas {
@@ -132,21 +175,241 @@ header {
 }
 
 .forma-2 {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    background-color: #f1c40f;
-    border-radius: 7rem 1rem 7rem 7rem;
-    bottom: 220px;
-    left: 1010px;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #f1c40f;
+  border-radius: 7rem 1rem 7rem 7rem;
+  bottom: 140px;
+  left: 1060px;
 }
 
-.forma-3{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background-color: #0d6efd;
-    border-radius: 1rem 1rem 7rem;
-    top: 130px;
-    left: 998px;
+.forma-3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #0d6efd;
+  border-radius: 1rem 1rem 7rem;
+  top: 230px;
+  left: 1078px;
+}
+
+.segunda-section {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 1363px;
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cabecario-2 {
+  /* border: 2px solid red; */
+  width: 1320px;
+  height: 218px;
+  margin: 0px 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msg-cabecario-2 {
+  color: #0f3132;
+  background: #d1e7dd;
+  /* border: 2px solid red; */
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  margin: 0px 0px 10px;
+  padding: 10px 25px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.titulo-cabecario-2 {
+  /* border: 2px solid red; */
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0px 0px 16px;
+}
+
+.linha {
+  width: 120px;
+  height: 5px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #e24997, #2d2ed4);
+}
+
+.section-cards{
+  /* border: 2px solid red; */
+  width: 1350px;
+  height: 932px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quadro-1{
+  border: 1px solid rgba(128, 128, 128, 0.27);
+  max-width: 400px;
+  height: 262px;
+  margin: 48px 24px 0px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.img-boot{
+  width: 72px;
+  background: #ebebeb;
+  margin: 0px 0px 24px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.img-npm{
+  width: 114px;
+  background: #ebebeb;
+  margin: 0px 0px 24px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.img-gulp{
+  width: 48px;
+  background: #ebebeb;
+  margin: 0px 0px 24px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.img-pug{
+  width: 84px;
+  background: #ebebeb;
+  margin: 0px 0px 24px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.img-dark{
+  width: 70px;
+  background: #ebebeb;
+  margin: 0px 0px 24px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.img-sass{
+  width:74px;
+  background: #ebebeb;
+  margin: 0px 0px 24px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+#img-modern{
+  /* width:34px; */
+  background: #ebebeb;
+  margin: 0px 0px 24px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+#img-raio{
+  /* width:34px; */
+  background: #ebebeb;
+  margin: 0px 0px 24px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.titulo-boot{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px 0px 16px;
+  color: #151e2e;
+}
+
+.paragrafo-card{
+  font-size: 16px;
+  color: #848aa6;
+  text-align: center;
+}
+
+@media (max-width:1366px){
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+    /* border: 2px solid red; */
+    max-width: 1250px;
+    height: 100vh;
+  }
+
+  .container-2{
+    display: flex;
+    justify-content: center;
+    padding: 250px;
+  }
+
+  .titulo{
+    font-size: 3rem;
+    line-height: 59px;
+    width: 580px;
+    /* border: 2px solid; */
+  }
+
+  .card-1{
+    /* border: 2px solid red; */
+    padding-right: 90px;
+  }
+
+  .card-2{
+    /* border: 2px solid red; */
+    padding: 250px;
+    margin-top: 25px;
+  }
+
+  .foto{
+    width: 470px;
+    height: 470px;
+  }
+
+  .nav-bar{
+    /* border: 1px solid black; */
+    width: 94vw;
+    margin-top: 0px;
+    padding-bottom: 0;
+  }
+
+  .forma-1{
+    bottom: 30px;
+    right: 85px;
+    width: 110px;
+    height: 250px;
+  }
+
+  .forma-2{
+    left: 750px;
+    bottom: 40px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .forma-3{
+    width: 120px;
+    height: 120px;
+    left: 750px;
+    top: 95px;
+  }
 }
