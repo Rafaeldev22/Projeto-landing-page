@@ -89,6 +89,15 @@ a:hover {
   border-radius: 6px;
   text-decoration: none;
   box-shadow: 0 0 0 0.25rem #ffc107b4;
+  transition: .2s ease;
+}
+
+.btn-2:hover{
+  /* opacity: 1; */
+  color: #000;
+  background-color: #ebb207;
+  border-color: #ebb207;
+  box-shadow: 0 0 0 0.25rem #ebb207;
 }
 
 svg {
@@ -538,6 +547,7 @@ ul {
   display: inline-block;
   width: 132px;
   height: 52px;
+  cursor: pointer;
 }
 
 #fade{
